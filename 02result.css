@@ -140,6 +140,24 @@ header {
   max-width: 500px;
 }
 
+a:link {
+  color: #000; /* 尚未點選過的顏色 */
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #cc7be5; /* 點選過的顏色 */
+}
+
+a:hover {
+  color: #e8ccff; /* 滑鼠滑過的顏色 */
+  text-decoration: none;
+}
+
+a:active {
+  color: #cc7be5; /* 按下當下的顏色 */
+}
+
 footer {
   text-align: center;
   background-color: #b577d1;
