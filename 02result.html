@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>職涯測驗結果</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="02result.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">職涯測驗結果</div>
+    <button class="menu-button" onclick="toggleMenu()">Menu ☰</button>
+  </header>
+
+  <div class="menu-content" id="menuContent">
+    <a href="index.html">個人簡介</a>
+    <a href="02result.html">職涯測驗結果</a>
+    <a href="03work.html">MIS相關工作</a>
+    <a href="04resume.html">求職履歷</a>
+    <!-- <a href="05robot.html">與我聊天</a> -->
+  </div>
+
+  <div class="container">
+    <!-- UCAN -->
+    <section class="test-block" style="background-color: #e8ccff;">
+      <h2>UCAN</h2>
+      <div class="images-row">
+        <div>
+          <p class="result-title">我的結果：</p>
+          <img src="image/ucan_result.png" alt="UCAN 測驗結果">
+        </div>
+        <div>
+          <p class="result-title">適合工作：</p>
+          <img class="ucan-work-img" src="image/ucan_work01.png" alt="UCAN 適合工作">
+        </div>
+      </div>
+      <p class="description">
+        <span>C事務型 : 「組織者」：謹慎的、依循規則、重視流程與精確度、喜歡組織整理</span><br>
+        <span>I研究型 : 「思考者」：理性的、重視理論與證據、喜歡分析與思考、追根究底</span><br>
+        <span>R實用型 : 「實做者」：耐心的、重視實用性、喜歡體能活動、喜歡操作工具</span><br>
+      </p>
+    </section>
+
+    <!-- CPAS -->
+    <section class="test-block" style="background-color: #cc7be5;">
+      <h2>CPAS</h2>
+      <div class="images-row">
+        <div>
+          <p class="result-title">我的結果：</p>
+          <img src="image/cpas_result.jpg" alt="CPAS 測驗結果">
+        </div>
+        <div>
+          <p class="result-title">適合工作：</p>
+          <img src="image/cpas_work.jpg" alt="CPAS 適合工作">
+        </div>
+      </div>
+      <p class="description">
+        <span>最高分：慎重性(9)、思考性(8)、持續性(7)、指導性(7) </span><br>
+        <span>適合工作：營業工作(4) </span><br>
+      </p>
+    </section>
+
+    <!-- Holland -->
+    <section class="test-block holland-section" style="background-color: #e8ccff;">
+      <h2>Holland碼</h2>
+      <div class="images-row">
+        <div>
+          <p class="result-title">我的結果：</p>
+          <img src="image/holland_result.png" alt="Holland 測驗結果">
+        </div>
+        <div>
+          <p class="result-title">適合工作：</p>
+          <img src="image/holland_work.png" alt="Holland 適合工作">
+        </div>
+      </div>
+      <p class="description">
+        <span>我的Holland碼類型為 : I研究型 & E企業型</span><br>
+        <span>I研究型 : 「思考者」：理性的、重視理論與證據、喜歡分析與思考、追根究底</span><br>
+        <span>E企業型 : 「影響者」：有彈性、勇於冒險與競爭、喜歡統籌與規劃、發揮影響力</span><br>
+      </p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+  <footer>
+    Copyright © 張惠芯. All Rights Reserved.
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menuContent");
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
+    }
+    
+    // 響應式檢測
+    window.addEventListener('resize', function() {
+      const menuContent = document.getElementById("menuContent");
+      if (window.innerWidth > 768) {
+        menuContent.style.display = "none";  // 在大螢幕切換時重置選單
+      }
+    });
+  </script>
+</body>
+</html>

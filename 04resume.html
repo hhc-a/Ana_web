@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>求職履歷</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="04resume.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">求職履歷</div>
+    <button class="menu-button" onclick="toggleMenu()">Menu ☰</button>
+  </header>
+
+  <div class="menu-content" id="menuContent">
+    <a href="index.html">個人簡介</a>
+    <a href="02result.html">職涯測驗結果</a>
+    <a href="03work.html">MIS相關工作</a>
+    <a href="04resume.html">求職履歷</a>
+    <!-- <a href="05robot.html">與我聊天</a> -->
+  </div>
+
+  <div class="container">
+    <section id="resume" class="profile-section">
+      <h3 class="job-title"><span>我未來想從事的工作：</span><span>前端工程師</span></h3>
+      <div class="info-list">
+        <div><strong>原因：</strong> 因為它結合了創意與技術。我能將概念轉化為視覺介面，立即看到成果。這不僅滿足我對程式設計的熱情，也能發揮創造力，且市場需求持續增長。</div>
+        <div><strong>工作內容：</strong> 運用HTML、CSS和JavaScript技術開發，並使用主流框架提升效率。我需實現響應式設計，與後端工程師協作，優化網站性能，並確保跨瀏覽器兼容性。</div>
+        <div><strong>為何適合這份工作：</strong> 我具備美感與設計觸覺，注重細節且善於解決技術難題。我有耐心處理兼容性問題，熱愛學習新技術，能理解使用者需求，並擁有良好溝通能力以促進團隊合作。</div>
+        <div><strong>如何充實自我：</strong> 我計劃學習核心前端技術及框架，掌握相關開發工具，參與開源專案累積經驗。我將持續關注技術趨勢，建立個人作品集，取得專業認證，並通過實際專案實踐所學。</div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="container2">
+        <section class="resume-layout">
+          <div class="left">
+            <div class="photo-name">
+              <div class="photo-frame">
+                <img src="image/self2.jpg" alt="個人照片">
+              </div>
+              <div class="name-block">
+                <h2>張惠芯</h2>
+                <p class="eng-name">Ana Chang</p>
+              </div>
+            </div>
+
+            <div class="contact">
+              📞 0958-142-988<br>
+              📧 s1120053@o365st.pu.edu.tw<br>
+              🏢 靜宜大學 資管系
+            </div>
+
+            <div class="language">
+              <h3>Language</h3>
+              <ul>
+                <li>Chinese</li>
+                <li>English</li>
+                <li>Vietnamese</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="right-content">
+            <div>
+              <h2>應徵職務：</h2>
+              <p>前端工程師</p>
+            </div>
+            <div class="spaced">
+              <h2>適任原因：</h2>
+              <p>技術專精、美感兼具、熱愛創新學習</p>
+            </div>
+            <div class="spaced">
+              <h2>技能：</h2>
+              <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li><a href="https://github.com/hhc-a" target="_blank">GitHub 專案</a></li>
+              </ol>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </div>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menuContent");
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
+    }
+    
+    // 響應式檢測
+    window.addEventListener('resize', function() {
+      const menuContent = document.getElementById("menuContent");
+      if (window.innerWidth > 768) {
+        menuContent.style.display = "none";  // 在大螢幕切換時重置選單
+      }
+    });
+  </script>
+  <footer>
+    Copyright © 張惠芯. All Rights Reserved.
+  </footer>
+</body>
+</html>

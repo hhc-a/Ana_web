@@ -1,0 +1,84 @@
+<!-- suitable-jobs.html 適合工作 -->
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIS相關工作</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="03work.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MIS相關工作</div>
+        <button class="menu-button" onclick="toggleMenu()">Menu ☰</button>
+    </header>
+    
+    <div class="menu-content" id="menuContent">
+        <a href="index.html">個人簡介</a>
+        <a href="02result.html">職涯測驗結果</a>
+        <a href="03work.html">MIS相關工作</a>
+        <a href="04resume.html">求職履歷</a>
+        <!-- <a href="05robot.html">與我聊天</a> -->
+    </div>
+    
+    <div class="container">
+        <section id="suitable-jobs" class="profile-section">
+            <div class="job-item">
+                <div>
+                    <h3>前端工程師（Front-end Developer）</h3>
+                    <p>公司：美商昇迪凡科技術有限公司台灣分公司</p>
+                    <p>技能要求：英文聽說讀寫精通、擅長 HTML、JavaScript、CSS、ReactNative、ReactJS、AngularJS、VueJS、Angular</p>
+                    <p>工作內容：具備網頁前端技能與工具應用能力，能跨瀏覽器開發、除錯與優化，並具良好溝通協作與持續學習精神。</p>
+                </div>
+                <img src="image/Front-end.png" alt="ucan適合工作">
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="job-item">
+                <div>
+                    <h3>軟體設計工程師（Software Designer）</h3>
+                    <p>公司：海科科技有限公司</p>
+                    <p>技能要求：具備英文聽說讀寫能力、系統架構規劃、功能測試、使用者測試、問題追蹤處理、軟體整合測試、測試環境建置規劃</p>
+                    <p>工作內容：將與團隊緊密合作，深入了解需求並透過自動化測試與缺陷管理，獨立評估並確保產品品質達到最高標準。</p>
+                </div>
+                <img src="image/Software.png" alt="ucan適合工作">
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="job-item">
+                <div>
+                    <h3>遊戲企劃人員（Game Planner）</h3>
+                    <p>公司：美商時豪科技股份有限公司</p>
+                    <p>技能要求：擅長使用Windows 2000、Excel、Outlook、PowerPoint、Word，且具數值資料統計和分析能力</p>
+                    <p>工作內容：負責新遊戲企劃與設計，進行數據分析、專案測試及資料管理，並具備良好跨部門溝通與 UI/UX 規劃能力。</p>
+                </div>
+                <img src="image/Game.png" alt="ucan適合工作">
+            </div>
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
+  <footer>
+    Copyright © 張惠芯. All Rights Reserved.
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menuContent");
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
+    }
+    
+    // 響應式檢測
+    window.addEventListener('resize', function() {
+      const menuContent = document.getElementById("menuContent");
+      if (window.innerWidth > 768) {
+        menuContent.style.display = "none";  // 在大螢幕切換時重置選單
+      }
+    });
+  </script>
+</body>
+</body>
+</html>
