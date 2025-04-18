@@ -79,7 +79,7 @@ header {
 
 .info-list div {
   margin-bottom: 1rem;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-family: 'Mali', sans-serif;
   padding-left: 1rem;
   border-left: 4px solid #cc7be5;
@@ -94,7 +94,7 @@ header {
 .container2 {
   max-width: 1200px;
   margin: auto;
-  padding: 30px;
+  padding: 20px;
 }
 
 .resume-layout {
@@ -207,6 +207,31 @@ header {
   list-style-position: inside;
 }
 
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem; /* 欲視覺間距可以自行調整 */
+}
+
+.two-columns .column {
+  flex: 1;
+}
+
+.right-content ul {
+  margin: 0;
+  padding-left: 1.9rem; /* 控制縮排距離，可調整 */
+}
+
+.right-content li {
+  list-style-type: disc;        /* 使用點點 */
+  list-style-position: outside; /* 點點靠左、文字靠右 */
+  word-break: break-word;
+  font-size: 1.3rem;
+  font-family: 'Mali', sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
 footer {
   text-align: center;
   background-color: #b577d1;
@@ -240,5 +265,9 @@ footer {
   .right-content {
     padding: 1rem;
     margin-top: 2rem;
+  }
+  
+  .breakable {
+    display: block;
   }
 }
