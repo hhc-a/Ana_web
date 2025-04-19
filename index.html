@@ -21,7 +21,7 @@
     body {
       margin: 0;
       font-family: 'Mali', cursive;
-      background-color: #e8ccff;
+      background-color: #d9b3ff;
       color: #333;
       position: relative;
       overflow-x: hidden;
@@ -112,12 +112,12 @@
       padding: 10px 15px;
       text-decoration: none;
       color: #000;
-      border-bottom: 1px solid #e8ccff;
+      border-bottom: 1px solid #d9b3ff;
       font-family: 'Mali', cursive;
     }
 
     .menu-content a:hover {
-      background-color: #e8ccff;
+      background-color: #d9b3ff;
     }
 
     nav {
@@ -334,11 +334,14 @@
       
       /* 在手機上取消偏移 */
       .card-wrapper.left-align,
-      .card-wrapper.right-align,
       .card-wrapper.left-align-2 {
         justify-content: center;
         margin-left: 0;
         margin-right: 0;
+      }
+
+      .card-wrapper.right-align {
+        justify-content: center;
       }
       
       .circle-img {
@@ -521,14 +524,14 @@
     // 幾何圖形背景
     const shapesContainer = document.getElementById('geometric-shapes-container');
     const shapes = ['circle', 'square', 'hexagon', 'triangle', 'pentagon', 'star', 'diamond', 'octagon'];
-    const numShapes = 30; // 增加圖形數量至30個
+    const numShapes = 50; // 增加圖形數量至30個
     const shapeElements = [];
     const colors = [
-      'rgba(180, 180, 180, 0.3)', 
-      'rgba(200, 200, 200, 0.3)', 
-      'rgba(160, 160, 160, 0.3)',
-      'rgba(190, 190, 190, 0.3)',
-      'rgba(170, 170, 170, 0.3)'
+      'rgba(180, 180, 180, 0.45)', 
+      'rgba(200, 200, 200, 0.45)', 
+      'rgba(160, 160, 160, 0.45)',
+      'rgba(190, 190, 190, 0.45)',
+      'rgba(170, 170, 170, 0.45)'
     ];
     
     // 創建初始圖形

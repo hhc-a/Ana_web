@@ -6,7 +6,7 @@
 body {
     margin: 0;
     font-family: 'Mali', sans-serif;
-    background-color: #e8ccff;
+    background-color: #dab6ff;
     color: #333;
   }
   
@@ -53,11 +53,11 @@ body {
     padding: 10px 15px;
     text-decoration: none;
     color: #000;
-    border-bottom: 1px solid #e8ccff;
+    border-bottom: 1px solid #d9b3ff;
   }
   
   .menu-content a:hover {
-    background-color: #e8ccff;
+    background-color: #d9b3ff;
   }
   
   .container {

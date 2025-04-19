@@ -6,7 +6,7 @@
 body {
   margin: 0;
   font-family: 'Mali', sans-serif;
-  background-color: #e8ccff;
+  background-color: #d9b3ff;
   color: #333;
 }
 
@@ -53,11 +53,11 @@ header {
   padding: 10px 15px;
   text-decoration: none;
   color: #000;
-  border-bottom: 1px solid #e8ccff;
+  border-bottom: 1px solid #d9b3ff;
 }
 
 .menu-content a:hover {
-  background-color: #e8ccff;
+  background-color: #d9b3ff;
 }
 
 .container {
@@ -103,7 +103,7 @@ header {
   gap: 10px;
   padding: 40px;
   border: 2px solid #000;
-  background-color: #eddcfc;
+  background-color: #e6d4fa;
   border-radius: 12px;
   height: auto;
   flex-wrap: wrap;
@@ -215,6 +215,11 @@ header {
 
 .two-columns .column {
   flex: 1;
+}
+
+.nowrap {
+  white-space: nowrap;
+  word-break: keep-all;
 }
 
 .right-content ul {

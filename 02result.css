@@ -6,7 +6,7 @@
 body {
   margin: 0;
   font-family: 'Mali', cursive;
-  background-color: #e8ccff;
+  background-color: #d9b3ff;
   color: #333;
 }
 
@@ -54,12 +54,12 @@ header {
   padding: 10px 15px;
   text-decoration: none;
   color: #000;
-  border-bottom: 1px solid #e8ccff;
+  border-bottom: 1px solid #d9b3ff;
   font-family: 'Mali', cursive;
 }
 
 .menu-content a:hover {
-  background-color: #e8ccff;
+  background-color: #d9b3ff;
 }
 
 .container {
@@ -150,7 +150,7 @@ header {
 }
 
 .holland-link:hover {
-  color: #e8ccff;  /* 滑鼠滑過的顏色（可選） */
+  color: #d9b3ff;  /* 滑鼠滑過的顏色（可選） */
 }
 
 .holland-link:active {
