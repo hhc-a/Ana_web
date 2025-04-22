@@ -278,7 +278,9 @@
       }
       
       .card-wrapper.right-align {
-        margin-right: -20px;
+        justify-content: center;
+        margin-right: 0;
+        margin-left: 0;
       }
       
       .circle-img {
@@ -330,18 +332,19 @@
         flex-direction: column;
         gap: 20px;
         margin-bottom: 40px;
+        padding-left: 0; /* 重置可能影响居中的padding */
+        padding-right: 0;
       }
       
       /* 在手機上取消偏移 */
+      .card-wrapper.right-align,
       .card-wrapper.left-align,
       .card-wrapper.left-align-2 {
+        display: flex;
         justify-content: center;
         margin-left: 0;
         margin-right: 0;
-      }
-
-      .card-wrapper.right-align {
-        justify-content: center;
+        width: 100%; /* 确保容器占据全宽 */
       }
       
       .circle-img {
@@ -378,13 +381,13 @@
       }
 
       /* 在手機模式下仍保持所有區塊置中 */
-      .profile-card .text-content{
-        text-align: center;
-      }
-
+      .profile-card .text-content,
       .profile-card.reverse .text-content {
-        align-items: center;  /* 手機上置中對齊 */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
+        width: 100%; /* 确保文本内容占据全宽 */
       }
       
       /* 在手機模式下線條置中 */
